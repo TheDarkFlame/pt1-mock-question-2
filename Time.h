@@ -13,7 +13,7 @@ public:
 	~Time();
 	void set(int hours_s,int minutes_s);
 	void get(int &hours, int & minutes);
-	friend istream operator>>(istream &is, Time temp);
-	friend ostream operator<<(const ostream &os, Time temp );
+	friend ostream& operator<<(ostream &os,const Time temp);
+	void operator++(int);
 };
 #endif
